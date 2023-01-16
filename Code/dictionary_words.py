@@ -1,12 +1,14 @@
 import sys
 import random
+from decorators import runtime_calc
 
+@runtime_calc
 def random_sentence():
     num_words = int(sys.argv[1])
 
     infile = open("/usr/share/dict/words", 'r')
-
     text = infile.readlines()
+    infile.close()
     words = []
 
     for line in text:
@@ -24,7 +26,8 @@ def random_sentence():
         if _ < num_words - 1:
             sentence += " "
     sentence += "."
+    print(sentence)
     return sentence
 
 if __name__ == "__main__":
-    print(random_sentence())
+    random_sentence()
