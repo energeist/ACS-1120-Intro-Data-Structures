@@ -6,33 +6,82 @@ test_text = 'one fish, two fish, red fish, blue fish'
 
 source_text = sys.argv[1]
 
-# add items by key and increment
-def histogram(source_text):
-    histogram = {}
+def read_source(source_text):
     with open(f"./{source_text}") as text:
-        words = re.split(r'\W+',text.read())
-    for word in words:
+        word_list = re.split(r'\W+',text.read())
+    return word_list
+
+# add items by key and increment
+def histogram(word_list):
+    histogram = {}
+    for word in word_list:
         word = word.lower()
         if word in histogram:
             histogram[word.lower()] += 1
         else:
             histogram[word.lower()] = 1
-    return dict(sorted(histogram.items(), key=lambda x: x[1], reverse=True))
+    return histogram
+    # return dict(sorted(histogram.items(), key=lambda x: x[1], reverse=True))
 
 # add items by count of list (slow)
-def histogram2(source_text):
+def histogram2(word_list):
     histogram = {}
-    with open(f"./{source_text}") as text:
-        words = re.split(r'\W+',text.read())
-    for word in words:
+    for word in word_list:
         word = word.lower()
-        histogram[word] = words.count(word)
-    return dict(sorted(histogram.items(), key=lambda x: x[1], reverse=True))
+        histogram[word] = word_list.count(word)
+    return histogram
+    # return dict(sorted(histogram.items(), key=lambda x: x[1], reverse=True))
+
+#Dani's version
+def dictogram(word_list):
+    dictogram = {}
+    for word in word_list:
+        word_count = dictogram.get(word, 0) + 1
+        dictogram[word] = word_count
+    return dictogram
+
+def listogram(word_list):
+    listogram = []
+    words = []
+    count = []
+    for word in word_list:
+        for index in range(len(listogram)):
+            if index[0] == word:
+                index[1] += 1
+            if index == len(listogram) - 1:
+                listogram.append[word, 1]
+    return listogram
+
+def listogram2(word_list):
+    listogram = []
+    unique_words = []
+    count = []
+    for word in word_list:
+        if unique_words.count(word.lower()) == 0:
+            unique_words.append(word.lower())
+            count.append(1)
+        else:
+            count[unique_words.index(word.lower())] += 1
+    for item in unique_words:
+        listogram.append([item, count[unique_words.index(item)]])
+    return listogram
+
+def listogram3(word_list):
+    listogram = []
+    unique_words = []
+    count = []
+    for word in word_list:
+        if unique_words.count(word.lower()) == 0:
+            unique_words.append(word.lower())
+            count.append(1)
+        else:
+            count[unique_words.index(word.lower())] += 1
+    listogram = list(zip(unique_words, count))
+    return listogram
 
 def invert(histogram_to_invert):
     inverted_histogram = {}
     for key in histogram_to_invert.keys():
-        
         if histogram_to_invert[key] in inverted_histogram:
             inverted_histogram[histogram_to_invert[key]].append(key)
         else:
@@ -46,19 +95,48 @@ def frequency(word, histogram):
     return histogram[word]
 
 if __name__ == "__main__":
+    print("reading text:")
     start = timeit.default_timer()
-    print(histogram(source_text))
-    print(unique_words(histogram2(source_text)))
-    print(frequency(sys.argv[2], histogram2(source_text)))
+    word_list = read_source(source_text)
     end = timeit.default_timer()
     print(f"Time to run {end - start} seconds\n")
-    # start = timeit.default_timer()
-    # print(histogram2(source_text))
+
+    print("histogram 1:")
+    start = timeit.default_timer()
+    histogram(word_list)
+    end = timeit.default_timer()
+    print(f"Time to run {end - start} seconds\n")
+    # print(unique_words(histogram(source_text)))
+    # print(frequency(sys.argv[2], histogram2(source_text)))
+
+    print("histogram 2:")
+    start = timeit.default_timer()
+    histogram2(word_list)
+    end = timeit.default_timer()
+    print(f"Time to run {end - start} seconds\n")
     # print(unique_words(histogram2(source_text)))
     # print(frequency(sys.argv[2], histogram2(source_text)))
-    # end = timeit.default_timer()
-    # print(f"Time to run {end - start} seconds\n")
+
+    print("invert histogram 1:")
     start = timeit.default_timer()
-    print(invert(histogram(source_text)))
+    invert(histogram(word_list))
+    end = timeit.default_timer()
+    print(f"Time to run {end - start} seconds\n")
+
+    print("dictogram:")
+    start = timeit.default_timer()
+    dictogram(word_list)
+    end = timeit.default_timer()
+    print(f"Time to run {end - start} seconds\n")
+
+    print("listogram 2:")
+    start = timeit.default_timer()
+    listogram2(word_list)
+    end = timeit.default_timer()
+    print(f"Time to run {end - start} seconds\n")
+
+    print("listogram 3:")
+    start = timeit.default_timer()
+    listogram3(word_list)
     end = timeit.default_timer()
     print(f"Time to run {end - start} seconds\n")
