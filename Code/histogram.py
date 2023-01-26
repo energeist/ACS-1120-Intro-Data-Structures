@@ -8,7 +8,7 @@ source_text = sys.argv[1]
 
 def read_source(source_text):
     with open(f"./{source_text}") as text:
-        word_list = re.split(r'\W+',text.read())
+        word_list = re.split(r'[^\w]+',text.read())
     return word_list
 
 # add items by key and increment
@@ -20,8 +20,8 @@ def histogram(word_list):
             histogram[word.lower()] += 1
         else:
             histogram[word.lower()] = 1
-    return histogram
-    # return dict(sorted(histogram.items(), key=lambda x: x[1], reverse=True))
+    # return histogram
+    return dict(sorted(histogram.items(), key=lambda x: x[1], reverse=True))
 
 # add items by count of list (slow)
 def histogram2(word_list):
