@@ -1,5 +1,5 @@
 """Main script, uses other modules to generate sentences."""
-from flask import Flask
+from flask import Flask, request
 from histogram import read_source
 from histogram import histogram
 from sample import choices_sentence
@@ -17,7 +17,8 @@ histogram_output = histogram(word_list)
 @app.route("/")
 def home():
     """Route that returns a web page containing the generated text."""
-    sentence = choices_sentence(histogram_output, 10)
+    num_words = int(request.args.get('num'))
+    sentence = choices_sentence(histogram_output, num_words)
     return f"<p>{sentence}</p>"
 
 if __name__ == "__main__":
