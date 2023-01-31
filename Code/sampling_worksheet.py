@@ -7,7 +7,7 @@ def sample(histogram):
     tokens = sum([count for word, count in histogram])
     # Count total tokens
     dart = random.randint(1, tokens)
-    dart = 10	
+    dart = 8	
     # Throw a dart on the number line 
     # Note: Assume that randint returns 8 here and dart stores the value 8 
     fence = 0
