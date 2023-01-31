@@ -10,8 +10,8 @@ app = Flask(__name__)
 # TODO: Initialize your histogram, hash table, or markov chain here.
 # Any code placed here will run only once, when the server starts.
 
-source_text = sys.argv[1]
-word_list = read_source(f'./data/{source_text}')
+# source_text = sys.argv[1]
+word_list = read_source(f'./data/volcanoes.txt')
 histogram_output = histogram(word_list)
 
 @app.route("/")
