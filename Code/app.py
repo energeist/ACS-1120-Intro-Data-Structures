@@ -11,14 +11,14 @@ app = Flask(__name__)
 # Any code placed here will run only once, when the server starts.
 
 source_text = sys.argv[1]
-word_list = read_source(source_text)
+word_list = read_source('/data/volcanoes.txt')
 histogram_output = histogram(word_list)
 
 @app.route("/")
 def home():
     """Route that returns a web page containing the generated text."""
-    num_words = int(request.args.get('num'))
-    sentence = choices_sentence(histogram_output, num_words)
+    # num = int(request.args.get('num'))
+    sentence = choices_sentence(histogram_output, 10)
     return f"<p>{sentence}</p>"
 
 if __name__ == "__main__":
