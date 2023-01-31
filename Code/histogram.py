@@ -4,7 +4,7 @@ import re
 
 test_text = 'one fish, two fish, red fish, blue fish'
 
-source_text = sys.argv[1]
+# source_text = sys.argv[1]
 
 def read_source(source_text):
     with open(f"./{source_text}") as text:

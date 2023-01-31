@@ -6,7 +6,7 @@ import re
 import timeit
 import random
 
-source_text = sys.argv[1]
+# source_text = sys.argv[1]
 
 def output_formatter(histogram, num_to_output):
     '''
