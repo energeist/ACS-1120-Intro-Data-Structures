@@ -12,38 +12,58 @@ class Listogram(list):
         super(Listogram, self).__init__()  # Initialize this as a new list
         # Add properties to track useful word counts for this histogram
         self.types = 0  # Count of distinct word types in this histogram
-        self.tokens = 0  # Total count of all word tokens in this histogram
+        self.tokens = 0  # Total count of all word tokens in this histogram\
+        self.words = []
+        self.counts = []
         # Count words in given list, if any
         if word_list is not None:
             for word in word_list:
                 self.add_count(word)
+            self.extend(list(zip(self.words, self.counts)))
 
     def add_count(self, word, count=1):
         """Increase frequency count of given word by given count amount."""
         # TODO: Increase word frequency by count
-
-        
+        if word in self.words:
+            self.counts[self.words.index(word)] += count
+        else:
+            self.words.append(word)
+            self.counts.append(count)
+            self.types += 1
+        self.tokens += count
 
     def frequency(self, word):
         """Return frequency count of given word, or 0 if word is not found."""
         # TODO: Retrieve word frequency count
-
+        try:
+            index = self.words.index(word)
+            return self.counts[index]
+        except(ValueError):
+            return 0
 
     def __contains__(self, word):
         """Return boolean indicating if given word is in this histogram."""
         # TODO: Check if word is in this histogram
-
+        try:
+            self.words.index(word)
+            return True
+        except(ValueError):
+            return False
 
     def index_of(self, target):
         """Return the index of entry containing given target word if found in
         this histogram, or None if target word is not found."""
         # TODO: Implement linear search to find index of entry with target word
+        try:
+            return self.words.index(word)
+        except(ValueError):
+            return None
 
     def sample(self):
         """Return a word from this histogram, randomly sampled by weighting
         each word's probability of being chosen by its observed frequency."""
         # TODO: Randomly choose a word based on its frequency in this histogram
-
+        return random.choices(self.words, self.counts, k = 1)[0]
 
 def print_histogram(word_list):
     print()
