@@ -7,12 +7,14 @@ test_text = 'one fish, two fish, red fish, blue fish'
 # source_text = sys.argv[1]
 
 def read_source(source_text):
+    """reads a source text and splits into a list of words, removing special characters"""
     with open(f"./{source_text}") as text:
         word_list = re.split(r'[^\w]+',text.read())
     return word_list
 
 # add items by key and increment
 def histogram(word_list):
+    """creates a histogram as a dictionary from a list of words"""
     histogram = {}
     for word in word_list:
         word = word.lower()
@@ -25,6 +27,7 @@ def histogram(word_list):
 
 # add items by count of list (slow)
 def histogram2(word_list):
+    """creates a histogram as a dictionary from a list of words"""
     histogram = {}
     for word in word_list:
         word = word.lower()
@@ -34,6 +37,7 @@ def histogram2(word_list):
 
 #Dani's version
 def dictogram(word_list):
+    """creates a histogram as a dictionary from a list of words"""
     dictogram = {}
     for word in word_list:
         word_count = dictogram.get(word, 0) + 1
@@ -41,6 +45,7 @@ def dictogram(word_list):
     return dictogram
 
 def listogram(word_list):
+    """creates a histogram as a list of lists from a list of words"""
     listogram = []
     words = []
     count = []
@@ -53,6 +58,7 @@ def listogram(word_list):
     return listogram
 
 def listogram2(word_list):
+    """creates a histogram as a list of lists from a list of words"""
     listogram = []
     unique_words = []
     count = []
@@ -67,6 +73,7 @@ def listogram2(word_list):
     return listogram
 
 def listogram3(word_list):
+    """creates a histogram as a list of tuples from a list of words"""
     listogram = []
     unique_words = []
     count = []
@@ -80,6 +87,8 @@ def listogram3(word_list):
     return listogram
 
 def invert(histogram_to_invert):
+    """creates an inverted histogram with counts as the key and a list of words 
+        with the corresponding counts as the value"""
     inverted_histogram = {}
     for key in histogram_to_invert.keys():
         if histogram_to_invert[key] in inverted_histogram:
@@ -89,9 +98,11 @@ def invert(histogram_to_invert):
     return(inverted_histogram) 
 
 def unique_words(histogram):
+    """returns the number of unique words (types) in a histogram"""
     return len(histogram.keys())
 
 def frequency(word, histogram):
+    """returns the count of the provided word"""
     return histogram[word]
 
 if __name__ == "__main__":
@@ -140,3 +151,13 @@ if __name__ == "__main__":
     listogram3(word_list)
     end = timeit.default_timer()
     print(f"Time to run {end - start} seconds\n")
+
+
+    print("testing things")
+    testdict = {
+        'key': 1,
+        'dog': 2
+    }
+
+    testdict.get('key')
+    testdict.get('cat')
