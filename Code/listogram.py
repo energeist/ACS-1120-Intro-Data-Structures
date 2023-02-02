@@ -19,7 +19,10 @@ class Listogram(list):
         if word_list is not None:
             for word in word_list:
                 self.add_count(word)
-            self.extend(list(zip(self.words, self.counts)))
+            # self.extend(list(zip(self.words, self.counts)))
+        
+        for _ in self.words:
+            self.append([self.words[self.words.index(_)], self.counts[self.words.index(_)]])
 
     def add_count(self, word, count=1):
         """Increase frequency count of given word by given count amount."""
