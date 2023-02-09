@@ -54,6 +54,7 @@ class MarkovChain(dict):
             for i in range(len(word_list)-1):
                 self.add_count(i, word_list)
             self.pop("END")
+            # print(self)
 
     def add_count(self, index, word_list, count = 1):
         """Generates a markov histogram from a provided word list"""
@@ -71,21 +72,29 @@ class MarkovChain(dict):
             if word == "END":
                 break
             chosen_words.append(word)
-        sentence = " ".join(chosen_words)
+        sentence = " ".join(chosen_words) + "."
         return sentence
 
+sample_text = "One fish, two fish, red fish, blue fish. Fun fish, brew fish, sled fish, shoo fish? Bun fish, shoe fish, dread fish, new fish!"
 
-# sentence = "One fish, two fish, red fish, blue fish."
-sentence = "One fish, two fish, red fish, blue fish. Fun fish, brew fish, sled fish, shoo fish? Bun fish, shoe fish, dread fish, new fish!"
+source_text = 'volcanoes.txt'
+
+def read_source(source_text):
+    """reads a source text and splits into a list of words, removing special characters and adding entry and exit points."""
+    with open(f"./data/{source_text}") as text:
+        text = text.read()
+        text = re.sub(r'[.!?]+', " END START ", text)
+        text = "START " + text
+        word_list = re.sub(r'[^\w]+', " ", text).split()
+        # print(word_list)
+    return word_list
 
 def add_entry_and_exit(text):
     text = "START " + text
     text = re.sub(r'[,]+', "", text)
     text = re.sub(r'[.!?]+', " END START ", text).split()
     return text
-
-
-
         
-markov = MarkovChain(add_entry_and_exit(sentence))
+markov = MarkovChain(read_source(source_text))
+# markov = MarkovChain(add_entry_and_exit(sample_text))
 print(markov.random_markov_sentence(10))
