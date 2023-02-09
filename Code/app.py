@@ -1,5 +1,5 @@
 """Main script, uses other modules to generate sentences."""
-from flask import Flask, request
+from flask import Flask, request, render_template
 from markov import read_source
 from markov import markov
 from sample import choices_sentence
@@ -19,7 +19,7 @@ def home():
     """Route that returns a web page containing the generated text."""
     # num = int(request.args.get('num'))
     sentence = markov.random_markov_sentence(15)
-    return f"<p>{sentence}</p>"
+    return render_template('index.html', sentence=sentence)
 
 if __name__ == "__main__":
     """To run the Flask server, execute `python app.py` in your terminal.
