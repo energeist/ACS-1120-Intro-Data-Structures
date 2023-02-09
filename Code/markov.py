@@ -86,7 +86,7 @@ def read_source(source_text):
         text = text.read()
         text = re.sub(r'[.!?]+', " END START ", text)
         text = "START " + text
-        word_list = re.sub(r'[^\w]+', " ", text).split()
+        word_list = re.sub(r'[^a-zA-Z0-9\’\']+', " ", text).split()
         # print(word_list)
     return word_list
 
@@ -98,4 +98,4 @@ def add_entry_and_exit(text):
         
 markov = MarkovChain(read_source(source_text))
 # markov = MarkovChain(add_entry_and_exit(sample_text))
-print(markov.random_markov_sentence(10))
+# print(markov.random_markov_sentence(10))

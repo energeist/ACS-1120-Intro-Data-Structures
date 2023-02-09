@@ -18,7 +18,9 @@ word_list = read_source(f'./data/volcanoes.txt')
 def home():
     """Route that returns a web page containing the generated text."""
     # num = int(request.args.get('num'))
-    sentence = markov.random_markov_sentence(15)
+    sentence = ""
+    while len(sentence) < 5:
+        sentence = markov.random_markov_sentence(15)
     return render_template('index.html', sentence=sentence)
 
 if __name__ == "__main__":
