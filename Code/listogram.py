@@ -3,7 +3,6 @@
 from __future__ import division, print_function  # Python 2 and 3 compatibility
 import random
 
-
 class Listogram(list):
     """Listogram is a histogram implemented as a subclass of the list type."""
 
@@ -12,17 +11,17 @@ class Listogram(list):
         super(Listogram, self).__init__()  # Initialize this as a new list
         # Add properties to track useful word counts for this histogram
         self.types = 0  # Count of distinct word types in this histogram
-        self.tokens = 0  # Total count of all word tokens in this histogram\
+        self.tokens = 0  # Total count of all word tokens in this histogram
         self.words = []
         self.counts = []
         # Count words in given list, if any
         if word_list is not None:
             for word in word_list:
                 self.add_count(word)
-            # self.extend(list(zip(self.words, self.counts)))
+            # self.extend(list(zip(self.words, self.counts))) # for list of tuples
         
         for _ in self.words:
-            self.append([self.words[self.words.index(_)], self.counts[self.words.index(_)]])
+            self.append([self.words[self.words.index(_)], self.counts[self.words.index(_)]]) # for list of lists
 
     def add_count(self, word, count=1):
         """Increase frequency count of given word by given count amount."""
@@ -67,6 +66,35 @@ class Listogram(list):
         each word's probability of being chosen by its observed frequency."""
         # TODO: Randomly choose a word based on its frequency in this histogram
         return random.choices(self.words, self.counts, k = 1)[0]
+    
+    def alpha_sorted_listogram(self):
+        return sorted(self, key=lambda x: x[0], reverse=False)
+
+    def count_sorted_listogram(self):
+        return sorted(self, key=lambda x: x[1], reverse=True)
+
+    def reverse_alpha_sorted_listogram(self):
+        return sorted(self, key=lambda x: x[0], reverse=True)
+
+    def reverse_count_sorted_listogram(self):
+        return sorted(self, key=lambda x: x[1], reverse=False)
+
+    def search_by_alpha(self, word):
+        if word[0] < "n":
+            temp = self.alpha_sorted_listogram()
+            self = temp
+            self.index_of(word)
+        else:
+            temp = self.reverse_alpha_sorted_listogram()
+            self = temp
+            self.index_of(word)
+
+    # def search_by_count(self, number):
+    #     if self[len(self)][1] < number:
+    #         pass
+    #     else:
+    #         pass
+
 
 def print_histogram(word_list):
     print()
@@ -116,7 +144,6 @@ def print_histogram_samples(histogram):
             + '| {:>4} = {:>6.2%} '.format(samples, sampled_freq)
             + '| {}{:>+7.2%}{} |'.format(color, error, reset))
     print(divider)
-    print()
 
 
 def main():
@@ -136,7 +163,13 @@ def main():
         woodchuck_text = ('how much wood would a wood chuck chuck'
                           ' if a wood chuck could chuck wood')
         print_histogram(woodchuck_text.split())
-
+        print(Listogram(woodchuck_text.split()).alpha_sorted_listogram())
+        print(Listogram(woodchuck_text.split()).reverse_alpha_sorted_listogram())
+        print(Listogram(woodchuck_text.split()).count_sorted_listogram())
+        print(Listogram(woodchuck_text.split()).reverse_count_sorted_listogram())
+        
+        listogram_1 = Listogram(woodchuck_text.split())
+        listogram_1.search_by_alpha("wood")
 
 if __name__ == '__main__':
     main()
