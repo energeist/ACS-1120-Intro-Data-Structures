@@ -19,7 +19,7 @@ def home():
     # num = int(request.args.get('num'))
     sentence = ""
     while len(sentence) < 5:
-        sentence = markov.random_markov_sentence(15)
+        sentence = markov.random_markov_sentence(30)
     return render_template('index.html', sentence=sentence)
 
 if __name__ == "__main__":
