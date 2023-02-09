@@ -14,7 +14,6 @@ class MarkovChain(dict):
             for i in range(len(word_list)-1):
                 self.add_count(i, word_list)
             self.pop("END")
-            # print(self)
 
     def add_count(self, index, word_list, count = 1):
         """Generates a markov histogram from a provided word list"""
@@ -23,7 +22,6 @@ class MarkovChain(dict):
             self[word].append(word_list[index + 1])
         else:
             self.update({word_list[index]: [word_list[index + 1]]})
-        # print(self)
 
     def random_markov_sentence(self, max_num):
         chosen_words = [random.choice(self["START"])]
@@ -32,7 +30,7 @@ class MarkovChain(dict):
             if word == "END":
                 break
             chosen_words.append(word)
-        sentence = " ".join(chosen_words) + "."
+        sentence = " ".join(chosen_words) + random.choice(".....!?")
         sentence = sentence[0].capitalize() + sentence[1:]
         return sentence
 
@@ -47,7 +45,6 @@ def read_source(source_text):
         text = re.sub(r'[.!?]+', " END START ", text)
         text = "START " + text
         word_list = re.sub(r'[^a-zA-Z0-9\’\']+', " ", text).split()
-        # print(word_list)
     return word_list
 
 def add_entry_and_exit(text):
@@ -57,5 +54,3 @@ def add_entry_and_exit(text):
     return text
         
 markov = MarkovChain(read_source(source_text))
-# markov = MarkovChain(add_entry_and_exit(sample_text))
-# print(markov.random_markov_sentence(10))
