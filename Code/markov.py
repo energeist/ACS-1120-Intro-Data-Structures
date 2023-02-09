@@ -73,15 +73,16 @@ class MarkovChain(dict):
                 break
             chosen_words.append(word)
         sentence = " ".join(chosen_words) + "."
+        sentence = sentence[0].capitalize() + sentence[1:]
         return sentence
 
 sample_text = "One fish, two fish, red fish, blue fish. Fun fish, brew fish, sled fish, shoo fish? Bun fish, shoe fish, dread fish, new fish!"
 
-source_text = 'volcanoes.txt'
+source_text = './data/volcanoes.txt'
 
 def read_source(source_text):
     """reads a source text and splits into a list of words, removing special characters and adding entry and exit points."""
-    with open(f"./data/{source_text}") as text:
+    with open(f"{source_text}") as text:
         text = text.read()
         text = re.sub(r'[.!?]+', " END START ", text)
         text = "START " + text
