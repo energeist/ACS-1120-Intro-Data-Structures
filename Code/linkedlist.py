@@ -86,6 +86,8 @@ class LinkedList:
         if self.head:
             node.next = self.head
             self.head = node
+        else:
+            self.head = node
 
     def find(self, matcher):
         """Return an item from this linked list if it is present.
@@ -104,7 +106,7 @@ class LinkedList:
             current_node = self.head
             while item not in current_node.data:
                 if current_node.next == None:
-                    return "Not Found"
+                    raise ValueError('Item not found: {}'.format(item))
                 else:
                     previous_node = current_node
                     current_node = current_node.next
@@ -113,16 +115,25 @@ class LinkedList:
                     else:
                         self.tail = current_node
             if current_node == self.head:
-                self.head = None
-                self.tail = None
-                self = None
+                if current_node.next:
+                    self.head = current_node.next
+                else:
+                    self.head = None
+                    self.tail = None
+                    self = None
+            elif current_node.next == None:
+                self.tail = previous_node
+                current_node = None
+                previous_node.next = None    
             else:
-                previous_node.next = next_node 
+                if current_node.next:
+                    previous_node.next = next_node
+                else:
+                    self.tail = previous_node 
 
         # TODO: Update previous node to skip around node with matching data
         # TODO: Otherwise raise error to tell user that delete has failed
         # Hint: raise ValueError('Item not found: {}'.format(item))
-
 
 def test_linked_list():
     ll = LinkedList()
