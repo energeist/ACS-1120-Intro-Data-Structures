@@ -140,6 +140,13 @@ class LinkedList:
         else:
             raise ValueError('Item not found: {}'.format(item)) 
 
+    def replace(self, match, replacement):
+        node = self.head
+        while node:
+            if match in node.data:
+                node.data = replacement
+            node = node.next
+        
         # TODO: Update previous node to skip around node with matching data
         # TODO: Otherwise raise error to tell user that delete has failed
         # Hint: raise ValueError('Item not found: {}'.format(item))
