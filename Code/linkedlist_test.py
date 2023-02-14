@@ -144,26 +144,26 @@ class LinkedListTest(unittest.TestCase):
     #     assert ll.find(lambda item: item > 'B') == 'C'  # Match greater than
     #     assert ll.find(lambda item: item == 'X') is None  # No matching item
 
-    # def test_delete_with_3_items(self):
-    #     ll = LinkedList(['A', 'B', 'C'])
-    #     assert ll.head.data == 'A'  # First item
-    #     assert ll.tail.data == 'C'  # Last item
-    #     ll.delete('A')
-    #     assert ll.head.data == 'B'  # New head
-    #     assert ll.tail.data == 'C'  # Unchanged
-    #     ll.delete('C')
-    #     assert ll.head.data == 'B'  # Unchanged
-    #     assert ll.tail.data == 'B'  # New tail
-    #     ll.delete('B')
-    #     assert ll.head is None  # No head
-    #     assert ll.tail is None  # No tail
-    #     # Delete should raise error if item was already deleted
-    #     with self.assertRaises(ValueError):
-    #         ll.delete('A')  # Item no longer in list
-    #     with self.assertRaises(ValueError):
-    #         ll.delete('B')  # Item no longer in list
-    #     with self.assertRaises(ValueError):
-    #         ll.delete('C')  # Item no longer in list
+    def test_delete_with_3_items(self):
+        ll = LinkedList(['A', 'B', 'C'])
+        assert ll.head.data == 'A'  # First item
+        assert ll.tail.data == 'C'  # Last item
+        ll.delete('A')
+        assert ll.head.data == 'B'  # New head
+        assert ll.tail.data == 'C'  # Unchanged
+        ll.delete('C')
+        assert ll.head.data == 'B'  # Unchanged
+        assert ll.tail.data == 'B'  # New tail
+        ll.delete('B')
+        assert ll.head is None  # No head
+        assert ll.tail is None  # No tail
+        # Delete should raise error if item was already deleted
+        with self.assertRaises(ValueError):
+            ll.delete('A')  # Item no longer in list
+        with self.assertRaises(ValueError):
+            ll.delete('B')  # Item no longer in list
+        with self.assertRaises(ValueError):
+            ll.delete('C')  # Item no longer in list
 
     def test_delete_with_5_items(self):
         ll = LinkedList(['A', 'B', 'C', 'D', 'E'])

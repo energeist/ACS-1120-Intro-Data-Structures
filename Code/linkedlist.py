@@ -129,7 +129,9 @@ class LinkedList:
                 if current_node.next:
                     previous_node.next = next_node
                 else:
-                    self.tail = previous_node 
+                    self.tail = previous_node
+        else:
+            raise ValueError('Item not found: {}'.format(item)) 
 
         # TODO: Update previous node to skip around node with matching data
         # TODO: Otherwise raise error to tell user that delete has failed
