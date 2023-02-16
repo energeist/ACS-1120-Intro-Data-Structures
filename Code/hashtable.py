@@ -119,11 +119,7 @@ class HashTable(object):
         # TODO: Otherwise, raise error to tell user delete failed
         # Hint: raise KeyError('Key not found: {}'.format(key))
         if self.contains(key):
-            for bucket_key, bucket_value in self.buckets[self._bucket_index(key)].items():
-                if bucket_key == key:
-                    current = (bucket_key, bucket_value)
-                    self.buckets[self._bucket_index(key)].delete(current)
-            self.buckets[self._bucket_index(key)].data = (key,value)
+            self.buckets[self._bucket_index(key)].delete(key)
         else:    
             raise KeyError('Key not found: {}'.format(key))
 
