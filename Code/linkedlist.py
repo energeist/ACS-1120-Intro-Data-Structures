@@ -65,7 +65,7 @@ class LinkedList:
 
     def append(self, item):
         """Insert the given item at the tail of this linked list.
-        TODO: Running time: O(???) Why and under what conditions?"""
+        TODO: Running time: O(1) Why and under what conditions?"""
         # TODO: Create new node to hold given item
         node = Node(item)
         # TODO: If self.is_empty() == True set the head and the tail to the new node
@@ -150,17 +150,18 @@ class LinkedList:
         else:
             raise ValueError('Item not found: {}'.format(item)) 
 
+    # TODO: Update previous node to skip around node with matching data
+    # TODO: Otherwise raise error to tell user that delete has failed
+    # Hint: raise ValueError('Item not found: {}'.format(item))
+
     def replace(self, match, replacement):
+
         node = self.head
         while node:
-            if match in node.data:
+            if match == node.data:
                 node.data = replacement
             node = node.next
         
-        # TODO: Update previous node to skip around node with matching data
-        # TODO: Otherwise raise error to tell user that delete has failed
-        # Hint: raise ValueError('Item not found: {}'.format(item))
-
 def test_linked_list():
     ll = LinkedList()
     print('list: {}'.format(ll))

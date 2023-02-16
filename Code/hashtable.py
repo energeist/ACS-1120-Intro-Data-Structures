@@ -101,22 +101,14 @@ class HashTable(object):
         # TODO: Check if key-value entry exists in bucket
         # TODO: If found, update value associated with given key
         # TODO: Otherwise, insert given key-value entry into bucket
-
         if self.contains(key):
-            for bucket_key, value in self.buckets[self._bucket_index(key)].items():
+            for bucket_key, bucket_value in self.buckets[self._bucket_index(key)].items():
                 if bucket_key == key:
-                    print("lol")
-                    # print(self.buckets[self._bucket_index(key)].items())
-            self.buckets[self._bucket_index(key)].data = (key,value)
+                    current = (bucket_key, bucket_value)
+                    new_tuple = (key, value)
+                    self.buckets[self._bucket_index(key)].replace(current, new_tuple)
         else:    
-            self.buckets[self._bucket_index(key)].append((key,value))
-        # if self.buckets[self._bucket_index(key)]:
-        #     for bucket_key, value in self.buckets[self._bucket_index(key)].items():
-        #         if bucket_key == key:
-        #             self.buckets[self._bucket_index(key)].data = (key,value)
-        #         else:
-        #             self.buckets[self._bucket_index(key)].append((key,value))
-        
+            self.buckets[self._bucket_index(key)].append((key,value))        
 
     def delete(self, key):
         """Delete the given key from this hash table, or raise KeyError.
@@ -126,6 +118,18 @@ class HashTable(object):
         # TODO: If found, delete entry associated with given key
         # TODO: Otherwise, raise error to tell user delete failed
         # Hint: raise KeyError('Key not found: {}'.format(key))
+        if self.contains(key):
+            for bucket_key, bucket_value in self.buckets[self._bucket_index(key)].items():
+                if bucket_key == key:
+                    current = (bucket_key, bucket_value)
+                    self.buckets[self._bucket_index(key)].delete(current)
+            self.buckets[self._bucket_index(key)].data = (key,value)
+        else:    
+            raise KeyError('Key not found: {}'.format(key))
+
+
+
+
 
 def test_hash_table():
     ht = HashTable()
@@ -146,7 +150,7 @@ def test_hash_table():
     print('length: {}'.format(ht.length()))
 
     # Enable this after implementing delete method
-    delete_implemented = False
+    delete_implemented = True
     if delete_implemented:
         print('\nTesting delete:')
         for key in ['I', 'V', 'X']:
