@@ -1,6 +1,6 @@
 from __future__ import division, print_function  # Python 2 and 3 compatibility
-from dictogram import Dictogram
-from listogram import Listogram
+# from dictogram import Dictogram
+# from listogram import Listogram
 import re
 import random
 
