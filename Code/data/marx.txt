@@ -3480,15 +3480,15 @@ In this chapter we are interested exclusively in the first form, i. e.,
 in the form which serves as the direct expression of the circulation of
 commodities.
 
-The process C―M―C consists of the movement C―M, the exchange of the
-commodity for money, or _selling_; the opposite movement M―C, exchange
+The process  consists of the movement , the exchange of the
+commodity for money, or _selling_; the opposite movement , exchange
 of money for a commodity, or _buying_; and of the unity of the two
-movements C―M―C, exchange of the commodity for money in order to
+movements , exchange of the commodity for money in order to
 exchange the money for a commodity, or _selling_ in order to _buy_.
 But the result which marks the end of the process is C―C, exchange of
 commodity for commodity, real interchange of matter.
 
-If we look at it from the extreme end of the first commodity, C―M―C
+If we look at it from the extreme end of the first commodity, 
 represents its transformation into gold and its retransformation from
 gold into a commodity; a movement in which the commodity exists first
 as a particular use-value, then divests itself of that character,
@@ -3497,22 +3497,22 @@ in which capacity it has nothing in common with its natural form,
 then throws off the last form as well to remain finally an actual
 use-value for the satisfaction of particular wants. In this last form
 it falls out of the sphere of circulation into that of consumption.
-The entire process of circulation C―M―C thus includes the combined
+The entire process of circulation  thus includes the combined
 series of metamorphoses, which every single commodity undergoes
 in order to become a direct use-value to its possessor. The first
 metamorphosis is accomplished in the first phase of the circulation
-process, C―M; the second in the last phase, M―C; and the entire
+process, ; the second in the last phase, ; and the entire
 process constitutes the _curriculum vitae_ of the commodity. But
-the process C―M―C represents the combined metamorphosis of a single
+the process  represents the combined metamorphosis of a single
 commodity and constitutes at the same time the sum of certain one-sided
 metamorphoses of other commodities, since every metamorphosis of the
 first commodity constitutes its transformation into another commodity
 and therefore the transformation of the other commodity into it; hence
 it constitutes a twofold transformation which takes place at the same
 stage of circulation. We must then consider separately each of the two
-processes of exchange into which circulation C―M―C breaks up.
+processes of exchange into which circulation  breaks up.
 
-C―M or _sale_: commodity C enters the process of circulation not only
+ or _sale_: commodity C enters the process of circulation not only
 as a particular use-value, e. g., a ton of iron, but as a use-value
 of a certain price, say, £3 17s. 10-1/2d., or an ounce of gold.
 While this price is on the one hand the exponent of the quantity of
@@ -3536,25 +3536,25 @@ imaginary gold it becomes real gold. In place of the name one ounce of
 gold or £3 17s. 10-1/2d., an ounce of real gold has appeared, but the
 ton of iron has cleared that place. Not only does the commodity―which
 in its price had been ideally converted into gold―actually turn into
-gold through the sale C―M, but gold, which as a measure of value had
+gold through the sale , but gold, which as a measure of value had
 been only ideal money and in fact figured merely as a money name of
 commodities―is now turned into actual money[66] by the same process.
 Just as gold became the ideal universal equivalent, because all
 commodities measured their values by it, so does it now become the
 absolutely alienable commodity, real money, because it is the product
-of the universal alienation of commodities for it―and the sale C―M is
+of the universal alienation of commodities for it―and the sale  is
 the process by means of which that universal alienation takes place.
 But gold becomes real money only through sale, because the exchange
 values of commodities were already ideal gold in their prices.
 
-In the sale C―M, as well as in the purchase M―C, two commodities,
+In the sale , as well as in the purchase , two commodities,
 entities of exchange value and use-value, confront each other, but the
 exchange value of the commodity exists only ideally as price; while
 as regards gold, although it is really a use-value, its use-value
 is confined only to its being the bearer of exchange value and is,
 therefore, merely a formal use-value, having no relation to a real
 individual want. The antithesis of use-value and exchange value is thus
-distributed at the two extreme poles of C―M, so that the commodity
+distributed at the two extreme poles of , so that the commodity
 confronts gold as a use-value which has yet to realize in gold its
 exchange value or its price, while gold confronts the commodity as an
 exchange value, whose formal use-value is yet to be realized in the
@@ -3566,23 +3566,23 @@ short, only through the appearance of commodities as two-sided polar
 opposites are the contradictions solved that are inherent in the
 process of exchange.
 
-So far we have considered C―M as sale, as the conversion of commodity
+So far we have considered  as sale, as the conversion of commodity
 into money. But if we look at it from the other end, the same process
-will assume the form M―C, or purchase, i. e., the conversion of
+will assume the form , or purchase, i. e., the conversion of
 money into commodity. Sale is necessarily its opposite at the same
 time; it is the former if we look at the process from one end, and
 the latter if we regard the process from the other end. In practice
-this process differs only in that the initiative in C―M originates
-at the commodity end or with the seller, while in M―C it comes from
+this process differs only in that the initiative in  originates
+at the commodity end or with the seller, while in  it comes from
 the money end or the buyer. In describing the first metamorphosis
 of the commodity, its conversion into money as a result of the
-completion of the first phase of circulation C―M, we assume at the
+completion of the first phase of circulation , we assume at the
 same time that another commodity has been converted into money and
-is now in its second phase of circulation, M―C. Thus we get into a
+is now in its second phase of circulation, . Thus we get into a
 vicious circle of assumptions. Circulation itself constitutes such a
-vicious circle. If we did not consider M in M―C as the result of a
+vicious circle. If we did not consider M in  as the result of a
 metamorphosis of another commodity, we would thereby take exchange out
-of the process of circulation. But outside of the latter the form C―M
+of the process of circulation. But outside of the latter the form 
 disappears and only two different Cs confront each other, say iron
 and gold, the exchange of which does not constitute a part of the
 process of circulation, being direct barter. Gold, at the source of
@@ -3612,7 +3612,7 @@ determined by the price of the commodity, i. e., by its exchange value
 estimated in gold.[67]
 
 Within the process of circulation gold appears in everybody’s hands as
-the result of sale C―M. But since C―M, sale, is at the same time M―C,
+the result of sale . But since , sale, is at the same time ,
 purchase, it is apparent that while C, the commodity from which the
 process starts, is passing through its first metamorphosis, another
 commodity, which confronts it as the opposite pole M, is completing
@@ -3636,7 +3636,7 @@ exchange of another particular use-value, the universal character of
 labor which creates exchange value is manifested in the separation and
 lack of coincidence of acts of purchase and sale.
 
-_M―C, purchase_, is the inverted movement of C―M and at the same time
+_, purchase_, is the inverted movement of  and at the same time
 the second or final metamorphosis of the commodity. As gold, i. e., in
 the form of the universal equivalent, the commodity can be directly
 represented in the use-values of all other commodities; the latter
@@ -3648,23 +3648,23 @@ alienation of commodities is the absolutely alienable commodity. There
 is no qualitative and only a quantitative limit to the transformation
 of gold into commodity, namely, the limit of its own quantity or
 magnitude of its value. “Everything is to be had for cash.” While in
-the movement C―M, the commodity, through its alienation as a use-value,
+the movement , the commodity, through its alienation as a use-value,
 realizes its own price and the use-value of somebody else’s money; it
-realizes in the movement M―C, through its alienation as an exchange
+realizes in the movement , through its alienation as an exchange
 value, its own use-value and the price of the other commodity. While
 through the realization of its price the commodity transforms gold
 into actual money, it turns gold into its merely fleeting money-form,
 through its own retransformation. Since the circulation of commodities
 implies an extensive division of labor and consequently a diversity of
 wants on the part of individuals, a diversity which bears an inverse
-ratio to the specialization of their own products, the purchase M―C may
+ratio to the specialization of their own products, the purchase  may
 appear as an equation with one commodity equivalent or split up into a
 series of commodity-equivalents limited by the variety of the demands
 of the purchaser and by the amount of money in his possession. Just as
-a sale is a purchase, so is a purchase a sale. M―C is at the same time
-C―M, but the initiative belongs in this case to gold or the purchaser.
+a sale is a purchase, so is a purchase a sale.  is at the same time
+, but the initiative belongs in this case to gold or the purchaser.
 
-Coming back now to C―M―C, or to circulation as a whole, it is apparent
+Coming back now to , or to circulation as a whole, it is apparent
 that it contains the combined series of metamorphoses through which
 a commodity passes. But at the same time as one commodity enters the
 first phase of its circulation and completes its first metamorphosis,
@@ -3675,19 +3675,19 @@ its second metamorphosis and falls out of circulation, while a third
 commodity enters circulation, passes through the first phase of its
 course completing the first metamorphosis.
 
-Thus, the combined circulation C―M―C, as a complete metamorphosis of a
+Thus, the combined circulation , as a complete metamorphosis of a
 commodity always constitutes at the same time the end of the complete
 metamorphosis of another commodity and the beginning of a complete
 metamorphosis of a third commodity, i. e., a series without beginning
 or end. To illustrate this let us call C in either extreme C’ and C”
 respectively, in order to distinguish the commodities, the series
-reading thus: C’―M―C”. The first member, C’―M, presupposes in fact
-that M is the result of another transaction C―M, and is thus itself
-merely the last member of a series C―M―C’, while the second part M―C”
-is merely a result of C”―M, or appears as the first part of C”―M―C’”,
+reading thus: C’―”. The first member, C’―M, presupposes in fact
+that M is the result of another transaction , and is thus itself
+merely the last member of a series ’, while the second part ”
+is merely a result of C”―M, or appears as the first part of C”―’”,
 and so on. Furthermore, although M is the result of only _one_ sale,
-it appears that the last part M―C, may be represented as M―C’ + M―C”
-+ M―C’”, etc., i. e., it may be split up into a number of purchases,
+it appears that the last part , may be represented as ’ + ”
++ ’”, etc., i. e., it may be split up into a number of purchases,
 and consequently a number of sales, or into a number of first members
 of new complete metamorphoses of commodities. Since the complete
 metamorphosis of a single commodity thus appears as a link not only
@@ -3698,26 +3698,26 @@ at a countless number of points. But every single sale or purchase
 stands as an independent isolated act, whose supplemental act may be
 separated from it in time and place, and therefore does not need to
 follow it directly as its continuation. Every separate process of
-circulation, C―M or M―C, as a transformation of one commodity into
+circulation,  or , as a transformation of one commodity into
 use-value and of another into money, i. e., as the first and second
 phases of circulation respectively forms an independent halting
 point from either direction; but, on the other hand, all commodities
 commence their second metamorphosis in the common form of the universal
 equivalent, gold, and stop at the starting point of the second phase of
-circulation; for that, reason any M―C dovetails in actual circulation
-with any C―M; the second chapter in the life-course of one commodity
+circulation; for that, reason any  dovetails in actual circulation
+with any ; the second chapter in the life-course of one commodity
 with the first chapter of that of another commodity. A, e. g., sells
-£2 worth of iron. He thus completes the transaction C―M or the first
+£2 worth of iron. He thus completes the transaction  or the first
 metamorphosis of commodity iron, but postpones his purchase until some
 other time. At the same time B, who sold 2 quarters of wheat for £6 a
 fortnight since, buys with the same £6 a coat and trousers of Moses &
-Son, thus completing M―C or the second metamorphosis of the commodity,
+Son, thus completing  or the second metamorphosis of the commodity,
 wheat.
 
-The two transactions M―C and C―M appear here merely as links of one
+The two transactions  and  appear here merely as links of one
 chain, because a commodity expressed in gold looks like any other
 commodity, and one cannot tell by the looks of the gold whether it is
-transformed iron or transformed wheat. C―M―C appears, therefore, in the
+transformed iron or transformed wheat.  appears, therefore, in the
 actual process of circulation as a jumble of countless accidentally
 coinciding or successively following members of different complete
 metamorphoses. The actual process of circulation thus appears not as
@@ -3730,11 +3730,11 @@ opposite, purchase, and vice versa. On the other hand, the process
 of circulation is nothing but the movement of metamorphoses in the
 world of commodities and, therefore, must reflect them also in its
 movement as a whole. How that reflection takes place we shall consider
-in the following chapter. It may be added here that in C―M―C the two
+in the following chapter. It may be added here that in  the two
 extreme Cs constitute two forms of commodities which do not bear the
 same relation to M. The first C relates to money as a commodity of a
 special class to a universal commodity, while money relates to the
-second C as a universal commodity to an individual commodity. C―M―C
+second C as a universal commodity to an individual commodity. 
 can, therefore, be reduced by abstract logic to the final form S―U―I in
 which S, standing for species, forms the first extreme; U, signifying
 universality, forms the connecting medium, and I, individuality,
@@ -3763,7 +3763,7 @@ precapitalistic forms of society, since it merely requires that
 the mutual relations of individuals should be those of owners of
 commodities.
 
-Now, if we consider the result of C―M―C, it comes down to mere
+Now, if we consider the result of , it comes down to mere
 interchange of matter, C―C. A commodity has been exchanged for a
 commodity, a use-value for a use-value, and the transformation of the
 commodity into money, or the commodity in its form of money, serves
@@ -3774,7 +3774,7 @@ of circulation, i. e., a _medium of circulation_.[69]
 
 We have seen that the process of circulation of commodities comes to
 a completion in C―C, appearing as mere barter carried on by means of
-money; further, that C―M―C represents in general not only two isolated
+money; further, that  represents in general not only two isolated
 processes, but their dynamic union as well; but to draw from that the
 conclusion that purchase and sale form an indivisible unit, is a mode
 of thinking the criticism of which belongs to the domain of logic,
@@ -3848,7 +3848,7 @@ side, occurs simultaneously at an indefinitely large number of points
 on the entire surface of bourgeois society. But the first step which
 the commodity makes in the sphere of circulation is also its last
 step.[72] Whether it leaves its place on account of its attraction
-for gold (C―M), or on account of its attraction by gold (M―C), with
+for gold (), or on account of its attraction by gold (), with
 one move, with one change of place it falls out of the sphere of
 circulation into that of consumption. Circulation is a continuous flow
 of commodities, but different commodities all the time, since each
@@ -3856,8 +3856,8 @@ commodity makes but one move. Every commodity enters upon the second
 phase of its circulation not as the same commodity, but as another
 commodity, gold. Hence the movement of a metamorphosed commodity is the
 movement of gold. The same piece of gold or the identical gold coin
-which changed places with one commodity in the act C―M, reappears from
-the opposite end as the starting point for M―C and thus changes places
+which changed places with one commodity in the act , reappears from
+the opposite end as the starting point for  and thus changes places
 for the second time with another commodity. Just as it passed from the
 hands of buyer B into those of seller A, it now leaves A’s hands who
 has become a buyer and passes into C’s hands. The path described by a
@@ -3882,7 +3882,7 @@ scattered purchases and sales which appear as so many separate changes
 of place between commodities and money, occur simultaneously separated
 only in point of space.
 
-The circulation of commodities C―M―C in its elementary form is
+The circulation of commodities  in its elementary form is
 completely described in the transition of money from the hands of the
 buyer into those of the seller and from the hands of the latter, as
 soon as he has turned buyer, into those of a new seller. This completes
@@ -3890,7 +3890,7 @@ the metamorphosis of the commodity and with it the movement of money
 in so far as that movement is the expression of the metamorphosis.
 But since new use-values are continually produced in the shape of new
 commodities and must thus be constantly thrown anew into circulation,
-the process C―M―C is repeatedly renewed by the same commodity owners.
+the process  is repeatedly renewed by the same commodity owners.
 The money which they have spent as buyers gets back into their hands
 as soon as they appear again as vendors of commodities. The constant
 renewal of the circulation of commodities finds its reflection in the
@@ -3916,7 +3916,7 @@ the former realizing the prices of the latter either by separate acts
 of circulation taking place simultaneously and side by side, or by
 successive transactions when the same coin realizes the prices of
 different commodities one after another. If we consider, e. g., the
-series C―M―C’―M―C”―M―C’”, etc., without regard to the qualitative
+series ’―”―’”, etc., without regard to the qualitative
 aspects which become indistinguishable in the process of circulation,
 we witness the same monotonous operation. After realizing the price
 of C, M successively realizes those of C’, C”, etc., and commodities
@@ -3968,7 +3968,7 @@ a given case. No economic fact is more generally known than that one
 can spend money with one hand without getting it back with the other.
 Money proceeds from an endless number of points and returns to as many
 different points, but the coincidence of the starting and returning
-points is a matter of chance, because in the movement C―M―C the turning
+points is a matter of chance, because in the movement  the turning
 of the buyer again into a seller is not a necessary condition. Still
 less does the circulation of money resemble a movement radiating
 from a common centre to all points of the periphery and back from
@@ -4006,7 +4006,7 @@ replaced by new commodities in the process of circulation. We have seen
 that in the process of the determination of prices the exchange value
 of all commodities is ideally converted into a certain quantity of gold
 of the same value and that the same amount of value is present in a
-double form in either of the isolated acts of circulation M―C and C―M,
+double form in either of the isolated acts of circulation  and ,
 first embodied in the commodity, and second, in gold; yet gold enjoys
 the capacity of a medium of circulation not by virtue of its isolated
 relation to separate commodities in a state of rest, but owing to its
@@ -4276,7 +4276,7 @@ price becomes also one between gold as coin and gold as the universal
 equivalent; in the latter capacity it circulates not only within the
 limits of national boundaries, but in the world market. As a measure of
 value gold was always of full weight, because it served only as ideal
-gold. In its capacity of equivalent in the isolated transaction C―M it
+gold. In its capacity of equivalent in the isolated transaction  it
 passes at once from a state of motion to a state of rest; but in its
 capacity of coin its natural substance comes in constant conflict with
 its function. The transformation of the gold sovereign into fictitious
@@ -4406,8 +4406,8 @@ to circulate. Only in so far as gold money becomes simply a token of
 its own value in the process of circulation, can mere tokens of value
 take its place.
 
-In so far as the movement C―M―C represents a dynamic unity of two
-processes C―M and M―C which pass directly one into the other, or in
+In so far as the movement  represents a dynamic unity of two
+processes  and  which pass directly one into the other, or in
 so far as a commodity passes through the complete process of its
 metamorphosis, it express its exchange value in price and in money
 only to discard that form at once and to become again a commodity or,
@@ -4436,7 +4436,7 @@ But the magnitude of the value which it represents depends all the
 time on the value of the quantity of gold for which it stands. As
 regards commodities the token of value expresses _the reality of their
 price_, it is _signum pretii_ and sign of their value only because
-their value is expressed in their price. In the process C―M―C, in so
+their value is expressed in their price. In the process , in so
 far as it represents the dynamic unity or direct alternation of the
 two metamorphoses―and that is the aspect it assumes in the sphere of
 circulation in which the token of value discharges its function―the
@@ -4657,29 +4657,28 @@ growing directly out of the metamorphosis of commodities, springs from
 the violation of its proper proportion to gold.
 
 
-Money as distinguished from coin, the result of the circulation process
-C―M―C, forms the starting point of the circulation process M―C―M, i.
+Money as distinguished from coin, the result of the circulation process forms the starting point of the circulation process , i.
 e. the exchange of money for commodity in order to exchange commodity
-for money. In the form C―M―C, commodity forms the starting and final
-points of the movement; in the form M―C―M, money plays that part. In
+for money. In the form commodity forms the starting and final
+points of the movement; in the form, money plays that part. In
 the former case money is the medium of exchange of commodities, in
 the latter the commodity helps money to become money. Money which
 appears merely as a means of circulation in the first form becomes
 an end in the second form; while commodity which appeared first as
 the end, now becomes but a means. Since money is itself the result of
-circulation C―M―C, the result of circulation appears at the same time
-as its starting point in the form M―C―M. While in the case of C―M―C the
+circulation, the result of circulation appears at the same time
+as its starting point in the form . While in the case of  the
 interchange of matter constituted the real import of the process, the
 form of the commodity resulting from this first process constitutes the
-import of the second process M―C―M.
+import of the second process .
 
-In the form C―M―C the two extreme members are commodities of the same
+In the form  the two extreme members are commodities of the same
 value, but qualitatively different use-values. Their mutual exchange
-C―C constitutes actual interchange of matter. In the form M―C―M the
+C―C constitutes actual interchange of matter. In the form  the
 two extremes are gold and at the same time gold of equal value. To
 exchange gold for a commodity in order to exchange the commodity for
 gold, or if we consider the final result M―M, to exchange gold for
-gold, seems absurd. But if we translate the formula M―C―M into the
+gold, seems absurd. But if we translate the formula  into the
 expression: _to buy_ in order _to sell_, which means nothing but to
 exchange gold for gold through an intervening movement, we recognize
 at once the prevailing form of capitalist production. In actual
@@ -4690,12 +4689,12 @@ that the extremes M, M are, if not qualitatively, then quantitatively
 different. Such a quantitative difference presupposes the _exchange of
 non-equivalents_, yet commodity and money as such are only opposite
 forms of the same commodity, i. e. they are different forms of the same
-magnitude of value. The circuit M―C―M thus conceals under the forms
+magnitude of value. The circuit  thus conceals under the forms
 of money and commodity more highly developed relations of production,
 and is but a reflection within the sphere of simple circulation of a
 movement of a more advanced character. Money, as distinguished from the
 medium of circulation, must therefore be developed from the direct form
-of circulation of commodities, C―M―C.
+of circulation of commodities, .
 
 Gold, i. e., the specific commodity which serves as a measure of
 value and a medium of circulation, becomes money without any further
@@ -4758,7 +4757,7 @@ his selling is determined by the labor-time required for the production
 of his commodity, his buying is determined by the continual renewal
 of the wants of life. In order to be able to buy without having sold
 anything, he must sell without buying. In fact, the circulation process
-C―M―C is a dynamic unity of sale and purchase only in so far as it
+ is a dynamic unity of sale and purchase only in so far as it
 constitutes at the same time the constant process of its separation.
 In order that money should flow continuously as coin, coin must
 constantly coagulate as money. The continuous flow of coin depends on
@@ -4771,7 +4770,7 @@ this never-ceasing transformation of coin into money and of money
 into coin by saying that every owner of commodities must always keep
 in supply besides the particular commodity which he sells, a certain
 quantity of the universal commodity with which he buys. We saw, that
-in the process C―M―C the second member M―C splits up into a series of
+in the process  the second member  splits up into a series of
 purchases which do not take place at once, but at intervals of time,
 so that one part of M circulates as money while the other rests as
 money. Money is in that case only _suspended coin_ and the separate
@@ -4815,7 +4814,7 @@ Owing to the mere fact that the owner of commodities can retain his
 commodity in the form of exchange value or retain the exchange-value as
 a commodity, the exchange of commodities for the purpose of retaining
 them in the transformed shape of gold becomes circulation’s own motive.
-The metamorphosis C―M takes place for the sake of the metamorphosis,
+The metamorphosis  takes place for the sake of the metamorphosis,
 i. e., in order to transform it from particular natural wealth into
 universal social wealth. Instead of change of matter, change of form
 becomes its own purpose. From a mere form of the movement exchange
@@ -5108,10 +5107,10 @@ b. MEANS OF PAYMENT.
 The two forms which have so far distinguished money from the
 circulating medium are those of _suspended coin_ and of the _hoard_.
 The temporary transformation of coin into money in the case of the
-former means that the second phase of C―M―C, namely purchase M―C,
+former means that the second phase of , namely purchase ,
 must break up within a certain sphere of circulation into a series
 of successive purchases. As to hoarding, it is simply based on the
-isolation of the act C―M when it does not immediately pass into M―C,
+isolation of the act  when it does not immediately pass into ,
 or is but an independent development of the first metamorphosis of
 a commodity; it represents money as the result of the alienation of
 all commodities in contradistinction to the medium of circulation as
@@ -5163,9 +5162,9 @@ All the forms in which gold develops into money, are but the unfolding
 of potentialities which the metamorphosis of commodities bears within
 itself. These forms did not become distinctly differentiated in the
 process of simple money circulation where money appears as coin and
-the movement C―M―C forms a dynamic unity; at most, they appeared
+the movement  forms a dynamic unity; at most, they appeared
 as mere potentialities as, e. g., in the case of the break in the
-metamorphosis of a commodity. We have seen that in the process C―M
+metamorphosis of a commodity. We have seen that in the process 
 the relations between the commodity and money were those of an actual
 use-value and ideal exchange-value to an actual exchange value and
 only ideal use-value. By alienating his commodity as a use-value the
@@ -5189,7 +5188,7 @@ the token of value called forth the guarantee of the state which has
 made it legal tender, so does the personal symbolism of the buyer bring
 about legally enforcible private contracts among commodity owners.
 
-The contrary may happen in the process M―C, where the money can be
+The contrary may happen in the process , where the money can be
 alienated as a real means of purchase, and in that way the price of the
 commodity can be realized before the use-value of the money is realized
 and the commodity actually delivered. This occurs constantly under
@@ -5199,7 +5198,7 @@ merchants residing in Russia mostly buy agricultural products. In these
 cases, however, the money always acts in its well known role of a means
 of purchase and therefore, does not assume any new forms.[103] We need
 not dwell, therefore, on this case any longer; but with reference to
-the changed form which the two processes M―C and C―M assume now, we
+the changed form which the two processes  and  assume now, we
 may note that the difference between purchase and sale which appeared
 but imaginary in the direct process of circulation, now becomes a real
 difference, since in the former case only the money is present and in
@@ -5218,7 +5217,7 @@ substitutes law.
 
   “I stay here on my bond!”
 
-Thus, in the modified form C―M in which the commodity is present and
+Thus, in the modified form  in which the commodity is present and
 money is only represented, money plays first of all the part of a
 measure of value. The exchange value of the commodity is estimated in
 money as its measure; but as exchange value, established by contract,
@@ -5537,7 +5536,7 @@ two developed forms of a means of purchase and of a means of payment,
 whose mutual relation in the world market is the very reverse of what
 it is at home. In the sphere of home circulation, money in the form of
 coin, played exclusively the part of a means of purchase, either as the
-intermediary in the dynamic unity C―M―C or as the representative of the
+intermediary in the dynamic unity  or as the representative of the
 transient form of exchange value in the unceasing change of positions
 by commodities. In the world market it is just the contrary. Gold and
 silver appear here as a means of purchase when the exchange of matter
@@ -5863,7 +5862,7 @@ of circulation, classical political economy should have conceived
 money first of all in its fluent form of exchange value arising and
 disappearing within the process of the metamorphosis of commodities.
 And since the circulation of commodities is regarded exclusively in the
-form of C―M―C and the latter in its turn, exclusively in its aspect of
+form of  and the latter in its turn, exclusively in its aspect of
 a dynamic unity of sale and purchase, money comes to be regarded in
 its capacity of a medium of circulation as opposed to its capacity of
 money. And when that medium of circulation is isolated in its function

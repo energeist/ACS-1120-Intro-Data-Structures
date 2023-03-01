@@ -47,11 +47,14 @@ class LinkedList:
 
     def is_empty(self):
         """Return a boolean indicating whether this linked list is empty."""
+        """=> O(1) because this is a comparison of a known value"""
         return self.head is None
 
     def length(self):
         """Return the length of this linked list by traversing its nodes.
         TODO: Running time: O(n) Why and under what conditions?"""
+        """=> O(n) because we must traverse the length of n elements of the list to get a count"""
+        """Even if n=1 this is technically still O(n) because O(1) represents constant time"""
         count = 0
         if self.head:
             current_node = self.head
@@ -66,6 +69,7 @@ class LinkedList:
     def append(self, item):
         """Insert the given item at the tail of this linked list.
         TODO: Running time: O(1) Why and under what conditions?"""
+        """=> O(1) because self.tail is tracked, and we are appending one item to a known location"""
         # TODO: Create new node to hold given item
         node = Node(item)
         # TODO: If self.is_empty() == True set the head and the tail to the new node
@@ -79,7 +83,8 @@ class LinkedList:
 
     def prepend(self, item):
         """Insert the given item at the head of this linked list.
-        TODO: Running time: O(???) Why and under what conditions?"""
+        TODO: Running time: O(???) Why and under what conditions?
+        => O(1) because self.head is tracked, and we are prepending one item to a known location"""
         # TODO: Create new node to hold given item
         node = Node(item)
         # TODO: Prepend node before head, if it exists
@@ -93,7 +98,9 @@ class LinkedList:
     def find(self, matcher):
         """Return an item from this linked list if it is present.
         TODO: Best case running time: O(???) Why and under what conditions?
-        TODO: Worst case running time: O(???) Why and under what conditions?"""
+        => O(1) best case if the item being found is the first item in the list
+        TODO: Worst case running time: O(???) Why and under what conditions?
+        => O(n) worst case if the item being found is the last item in the list"""
         # TODO: Loop through all nodes to find item, if present return True otherwise False
         
         # SLICK CODE THAT MATCHES ORIGINAL TEST FILE
@@ -115,7 +122,9 @@ class LinkedList:
     def delete(self, item):
         """Delete the given item from this linked list, or raise ValueError.
         TODO: Best case running time: O(???) Why and under what conditions?
-        TODO: Worst case running time: O(???) Why and under what conditions?"""
+        => O(1) best case if item being deleted is the first item in the list
+        TODO: Worst case running time: O(???) Why and under what conditions?
+        => O(n) worst case if the item being deleted is the last item in the list"""
         # TODO: Loop through all nodes to find one whose data matches given item
         previous_node = None
         next_node = None
@@ -155,7 +164,6 @@ class LinkedList:
     # Hint: raise ValueError('Item not found: {}'.format(item))
 
     def replace(self, match, replacement):
-
         node = self.head
         while node:
             if match == node.data:

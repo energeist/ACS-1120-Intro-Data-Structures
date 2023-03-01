@@ -1,6 +1,4 @@
 from __future__ import division, print_function  # Python 2 and 3 compatibility
-# from dictogram import Dictogram
-# from listogram import Listogram
 import re
 import random
 
@@ -24,6 +22,7 @@ class MarkovChain(dict):
             self.update({word_list[index]: [word_list[index + 1]]})
 
     def random_markov_sentence(self, max_num):
+        """Generates a random sentence from a markov chain"""
         chosen_words = [random.choice(self["START"])]
         for _ in range(max_num - 1):
             word = random.choice(self[chosen_words[-1]])
@@ -39,12 +38,24 @@ sample_text = "One fish, two fish, red fish, blue fish. Fun fish, brew fish, sle
 source_text = './data/marx.txt'
 
 def read_source(source_text):
-    """reads a source text and splits into a list of words, removing special characters and adding entry and exit points."""
+    """Built for a first order markov chain implementation. Reads a source text and splits into a list of words, 
+    removing special characters and adding entry and exit points."""
     with open(f"{source_text}") as text:
         text = text.read()
         text = re.sub(r'[.!?]+', " END START ", text)
         text = "START " + text
         word_list = re.sub(r'[^a-zA-Z\’\']+', " ", text).split()
+    return word_list
+
+def read_source_2(source_text):
+    """reads a source text and splits into a list of words, removing special characters and adding entry and exit points."""
+    with open(f"{source_text}") as text:
+        text = text.read()
+        text = re.sub(r'\s[A-HJ-Za-z]?[\.\,]\s', "", text)
+        # text = re.sub(r'\b[B-HJ-PM-Zb-z]\s', " ", text)
+        # text = re.sub(r'\s[\.\,]\s', " ", text)
+        # text = "START " + text
+        word_list = re.sub(r'[^a-zA-Z\,\’\'\.\!\?]+', " ", text).split()
     return word_list
 
 def add_entry_and_exit(text):
