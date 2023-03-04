@@ -30,8 +30,9 @@ class HashTable(object):
     def keys(self):
         """Return a list of all keys in this hash table.
         TODO: Running time: O(???) Why and under what conditions?
-        => best and average case is O(n^2) because a list of buckets must be traversed,
-        as well as each linked list contained in a bucket"""
+        => best and average case is O(n) because a list of buckets is typically
+        considered to be known (constant) length but length of linked list is unknown
+        and it must be traversed"""
         # Collect all keys in each bucket
         all_keys = []
         for bucket in self.buckets:
@@ -42,8 +43,9 @@ class HashTable(object):
     def values(self):
         """Return a list of all values in this hash table.
         TODO: Running time: O(???) Why and under what conditions?
-        => best and average case is O(n^2) because a list of buckets must be traversed,
-        as well as each linked list contained in a bucket"""
+        => best and average case is O(n) because a list of buckets is typically
+        considered to be known (constant) length but length of linked list is unknown
+        and it must be traversed"""
         # TODO: Loop through all buckets
         # TODO: Collect all values in each bucket
         all_values = []
@@ -55,8 +57,9 @@ class HashTable(object):
     def items(self):
         """Return a list of all items (key-value pairs) in this hash table.
         TODO: Running time: O(???) Why and under what conditions?
-        => best and average case is O(n^2) because a list of buckets must be traversed,
-        as well as each linked list contained in a bucket"""
+        => best and average case is O(n) because a list of buckets is typically
+        considered to be known (constant) length but length of linked list is unknown
+        and it must be traversed"""
 
         # Collect all pairs of key-value entries in each bucket
         all_items = []
@@ -67,8 +70,9 @@ class HashTable(object):
     def length(self):
         """Return the number of key-value entries by traversing its buckets.
         TODO: Running time: O(???) Why and under what conditions?
-        => best and average case is O(n^2) because a list of buckets must be traversed,
-        as well as each linked list contained in a bucket"""
+        => best and average case is O(n) because a list of buckets is typically
+        considered to be known (constant) length but length of linked list is unknown
+        and it must be traversed"""
 
         # TODO: Loop through all buckets
         # TODO: Count number of key-value entries in each bucket
@@ -82,7 +86,7 @@ class HashTable(object):
         TODO: Running time: O(???) Why and under what conditions?
         => O(1) best case if item is first in the associated list,
         because finding a hash is O(1)
-        => O(n) average case"""
+        => O(n/b) average case where b is the number of buckets"""
         # TODO: Find bucket where given key belongs
         # TODO: Check if key-value entry exists in bucket
 
@@ -96,7 +100,7 @@ class HashTable(object):
         TODO: Running time: O(???) Why and under what conditions?
         => O(1) best case if item is first in the associated list,
         because finding a hash is O(1)
-        => O(n) average case"""
+        => O(n/b) average case where b is the number of buckets"""
         # TODO: Find bucket where given key belongs
         # TODO: Check if key-value entry exists in bucket
         # TODO: If found, return value associated with given key
@@ -113,7 +117,7 @@ class HashTable(object):
         TODO: Running time: O(???) Why and under what conditions?
         => O(1) best case if item is first in the associated list,
         because finding a hash is O(1)
-        => O(n) average case"""
+        => O(n/b) average case where b is the number of buckets"""
         # TODO: Find bucket where given key belongs
         # TODO: Check if key-value entry exists in bucket
         # TODO: If found, update value associated with given key
@@ -132,7 +136,7 @@ class HashTable(object):
         TODO: Running time: O(???) Why and under what conditions?
         => O(1) best case if item is first in the associated list,
         because finding a hash is O(1)
-        => O(n) average case"""
+        => O(n/b) average case where b is the number of buckets"""
         # TODO: Find bucket where given key belongs
         # TODO: Check if key-value entry exists in bucket
         # TODO: If found, delete entry associated with given key

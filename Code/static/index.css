@@ -40,3 +40,8 @@ p {
 button {
     margin-bottom: 1em;
 }
+
+button:hover {
+    border: 2px solid red;
+    cursor: pointer;
+}

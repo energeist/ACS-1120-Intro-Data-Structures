@@ -114,7 +114,7 @@ class LinkedList:
         # SAD NON-LAMBDA CODE THAT MATCHES GRADESCOPE 4.13 TEST
         node = self.head
         while node:
-            if matcher in node.data:
+            if matcher == node.data:
                 return True
             node = node.next
         return False
@@ -130,7 +130,7 @@ class LinkedList:
         next_node = None
         if self.head:
             current_node = self.head
-            while item not in current_node.data:
+            while item not in current_node.data: # loop until data is found
                 if current_node.next == None:
                     raise ValueError('Item not found: {}'.format(item))
                 else:
@@ -140,24 +140,24 @@ class LinkedList:
                         next_node = current_node.next
                     else:
                         self.tail = current_node
-            if current_node == self.head:
+            if current_node == self.head: # if data is found in the head
                 if current_node.next:
                     self.head = current_node.next
                 else:
                     self.head = None
                     self.tail = None
                     self = None
-            elif current_node.next == None:
+            elif current_node.next == None: # if data is found in the tail
                 self.tail = previous_node
                 current_node = None
                 previous_node.next = None    
-            else:
+            else: # data is found between head and tail
                 if current_node.next:
                     previous_node.next = next_node
                 else:
                     self.tail = previous_node
         else:
-            raise ValueError('Item not found: {}'.format(item)) 
+            raise ValueError('Item not found: {}'.format(item))
 
     # TODO: Update previous node to skip around node with matching data
     # TODO: Otherwise raise error to tell user that delete has failed
