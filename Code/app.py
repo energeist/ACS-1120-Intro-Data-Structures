@@ -15,33 +15,24 @@ app = Flask(__name__)
 word_list = read_source_2(f'./data/marx.txt')
 # print(word_list)
 markov_chain = {}
+# Initialize with 2nd order markov chain
+order = 2
+sentence_starters, full_ngram = sentence_ngram(word_list, order)
 
 @app.route("/")
 def home():
     """Route that returns a web page containing the generated text."""
-    # num = int(request.args.get('num'))
-
     sentence = ""
-    order = 2
-    min_length = 15
-
-    ## This works
-    # while len(sentence) < 5:
-    #     markov_chain = ngram(word_list, order)
-    #     sentence = generate_markov_sentence(markov_chain, min_length, order)
-    # print(markov_chain)
-    
-    ##This needs work?
-    # print(word_list)
-    sentence_starters, full_ngram = sentence_ngram(word_list, order)
-    print(sentence_starters)
-    # print(full_ngram)
-    # print(len(word_list))
-    # print(full_ngram)
-    # generated_text = generate_sentence(chain, 20, order)
-    # print(generated_text)
-    sentence = generate_sentence_2(full_ngram, sentence_starters, min_length, order)
-    return render_template('index.html', sentence=sentence)
+    # if order != 2:
+    #     sentence_starters, full_ngram = sentence_ngram(word_list, order)
+    # print(sentence_starters)
+    generated_text = '' 
+    num_sentences = int(request.args.get('num_sentences'))
+    # num_sentences = 2
+    for _ in range(num_sentences):
+        sentence = generate_sentence_2(full_ngram, sentence_starters, order)
+        generated_text += sentence + " "
+    return render_template('index.html', sentence=generated_text)
 
 if __name__ == "__main__":
     """To run the Flask server, execute `python app.py` in your terminal.

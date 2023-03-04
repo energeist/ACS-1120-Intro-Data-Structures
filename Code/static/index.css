@@ -1,0 +1,22 @@
+body {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+h1 {
+    margin-block-start: 0;
+}
+
+div {
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    width: 50%;
+    min-height: 100px;
+    padding: 3em;
+    margin: auto;
+    align-self: center;
+}

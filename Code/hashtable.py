@@ -143,10 +143,6 @@ class HashTable(object):
         else:    
             raise KeyError('Key not found: {}'.format(key))
 
-
-
-
-
 def test_hash_table():
     ht = HashTable()
     print('hash table: {}'.format(ht))
@@ -176,7 +172,6 @@ def test_hash_table():
 
         print('contains(X): {}'.format(ht.contains('X')))
         print('length: {}'.format(ht.length()))
-
 
 if __name__ == '__main__':
     test_hash_table()

@@ -136,7 +136,7 @@ def generate_markov_sentence(markov_chain, length, order = 2):
     sentence = " ".join(chosen_words) + random.choice(".....!?")
     return sentence
 
-def generate_sentence_2(markov_chain, starters, length, order = 2):
+def generate_sentence_2(markov_chain, starters, order = 2):
     """generates a sentence from an ngram.  Takes a full ngram, a list of starter tuples, 
     a sentence length and the order of the ngram"""
     word_group = random.choice(starters)

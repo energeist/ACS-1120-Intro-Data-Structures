@@ -51,7 +51,13 @@ def read_source_2(source_text):
     """reads a source text and splits into a list of words, removing special characters and adding entry and exit points."""
     with open(f"{source_text}") as text:
         text = text.read()
-        text = re.sub(r'\s[A-HJ-Za-z]?[\.\,]\s', "", text)
+        text = re.sub(r'\s[\.\,]*[A-HJ-Za-z]?[\.\,]\s', " ", text)
+        text = re.sub(r'\b(\w|\d)[^\w\s]', " ", text) # remove artifacts like ,e.
+        text = re.sub(r'\b[A-Z]{2,}'," ",text) # remove all ALLCAPS words
+        text = re.sub(r'\s\W*\s', " ", text) # remove random floating punctuation
+        # text = re.sub(r'(\W)\W'," ",test)
+        # print(test)
+        # text = re.sub(r'\s[\.\,]*[A-HJ-Za-z]?[\.\,]\s', "", text)
         # text = re.sub(r'\b[B-HJ-PM-Zb-z]\s', " ", text)
         # text = re.sub(r'\s[\.\,]\s', " ", text)
         # text = "START " + text
