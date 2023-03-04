@@ -26,12 +26,16 @@ def home():
     # if order != 2:
     #     sentence_starters, full_ngram = sentence_ngram(word_list, order)
     # print(sentence_starters)
-    generated_text = '' 
-    num_sentences = int(request.args.get('num_sentences'))
-    # num_sentences = 2
-    for _ in range(num_sentences):
-        sentence = generate_sentence_2(full_ngram, sentence_starters, order)
-        generated_text += sentence + " "
+    generated_text = ''
+
+    sentences_input = request.args.get('num_sentences')
+    if sentences_input:
+        num_sentences = int(sentences_input)
+        for _ in range(num_sentences):
+            sentence = generate_sentence_2(full_ngram, sentence_starters, order)
+            generated_text += sentence + " "
+    else:
+        generated_text = generate_sentence_2(full_ngram, sentence_starters, order)
     return render_template('index.html', sentence=generated_text)
 
 if __name__ == "__main__":
