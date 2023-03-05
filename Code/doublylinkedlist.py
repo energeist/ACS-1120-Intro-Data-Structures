@@ -145,22 +145,22 @@ class DoublyLinkedList:
                     else:
                         self.tail = current_node
             if current_node == self.head: # if data is found in the head
-                if current_node.next:
+                if current_node.next: # If there are nodes following the head
                     self.head = current_node.next
                     self.head.prev = None
-                else:
+                else: # there are no nodes following the head then the list will be empty after deletion
                     self.head = None
                     self.tail = None
                     self = None
-            elif current_node.next == None: # if data is found in the tail
+            elif current_node.next == None: # if data is found in the tail previous node is set as tail
                 self.tail = previous_node
                 current_node = None
                 previous_node.next = None    
             else: # data is found between head and tail
                 if current_node.next:
-                    previous_node.next = next_node
-                else:
-                    self.tail = previous_node
+                    current_node.next.prev = current_node.prev # update the .prev on the enxt node to be the previous node
+                current_node = None 
+                previous_node.next = next_node
         else:
             raise ValueError('Item not found: {}'.format(item))
 
