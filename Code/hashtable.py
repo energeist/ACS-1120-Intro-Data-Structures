@@ -3,7 +3,6 @@
 from linkedlist import LinkedList
 
 class HashTable(object):
-
     def __init__(self, init_size=8):
         """Initialize this hash table with the given initial size."""
         # Create a new list (used as fixed-size array) of empty linked lists

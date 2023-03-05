@@ -1,18 +1,20 @@
 #!python
+import sys
 
-class Node(object):
+class DoubleNode(object):
 
     def __init__(self, data):
         """Initialize this node with the given data."""
         self.data = data
         self.next = None
+        self.prev = None
 
     def __repr__(self):
         """Return a string representation of this node."""
         return f'Node({self.data})'
 
 
-class LinkedList:
+class DoublyLinkedList:
 
     def __init__(self, items=None):
         """Initialize this linked list and append the given items, if any."""
@@ -25,10 +27,10 @@ class LinkedList:
 
     def __repr__(self):
         """Return a string representation of this linked list."""
-        ll_str = ""
+        dll_str = ""
         for item in self.items():
-            ll_str += f'({item}) -> '
-        return ll_str
+            dll_str += f'({item}) -> '
+        return dll_str
 
     def items(self):
         """Return a list (dynamic array) of all items in this linked list.
@@ -71,13 +73,14 @@ class LinkedList:
         TODO: Running time: O(1) Why and under what conditions?"""
         """=> O(1) because self.tail is tracked, and we are appending one item to a known location"""
         # TODO: Create new node to hold given item
-        node = Node(item)
+        node = DoubleNode(item)
         # TODO: If self.is_empty() == True set the head and the tail to the new node
         if self.is_empty() == True:
             self.head = node 
             self.tail = node
         # TODO: Else append node after tail
         else:
+            node.prev = self.tail # adding to tail means tail is previous to new node
             self.tail.next = node
             self.tail = node
 
@@ -86,9 +89,10 @@ class LinkedList:
         TODO: Running time: O(???) Why and under what conditions?
         => O(1) because self.head is tracked, and we are prepending one item to a known location"""
         # TODO: Create new node to hold given item
-        node = Node(item)
+        node = DoubleNode(item)
         # TODO: Prepend node before head, if it exists
         if self.head:
+            self.head.prev = node # prepending to head means former head node's prev node is new node
             node.next = self.head
             self.head = node
         else:
@@ -114,7 +118,7 @@ class LinkedList:
         # SAD NON-LAMBDA CODE THAT MATCHES GRADESCOPE 4.13 TEST
         node = self.head
         while node:
-            if matcher in node.data:
+            if matcher == node.data:
                 return True
             node = node.next
         return False
@@ -130,7 +134,7 @@ class LinkedList:
         next_node = None
         if self.head:
             current_node = self.head
-            while item not in current_node.data: # loop until data is found
+            while item != current_node.data: # loop until data is found
                 if current_node.next == None:
                     raise ValueError('Item not found: {}'.format(item))
                 else:
@@ -143,6 +147,7 @@ class LinkedList:
             if current_node == self.head: # if data is found in the head
                 if current_node.next:
                     self.head = current_node.next
+                    self.head.prev = None
                 else:
                     self.head = None
                     self.tail = None
@@ -170,18 +175,18 @@ class LinkedList:
                 node.data = replacement
             node = node.next
         
-def test_linked_list():
-    ll = LinkedList()
-    print('list: {}'.format(ll))
+def test_doubly_linked_list():
+    dll = DoublyLinkedList()
+    print('list: {}'.format(dll))
     print('\nTesting append:')
     for item in ['A', 'B', 'C']:
         print('append({!r})'.format(item))
-        ll.append(item)
-        print('list: {}'.format(ll))
+        dll.append(item)
+        print('list: {}'.format(dll))
 
-    print('head: {}'.format(ll.head))
-    print('tail: {}'.format(ll.tail))
-    print('length: {}'.format(ll.length()))
+    print('head: {}'.format(dll.head))
+    print('tail: {}'.format(dll.tail))
+    print('length: {}'.format(dll.length()))
 
     # Enable this after implementing delete method
     delete_implemented = True
@@ -189,13 +194,12 @@ def test_linked_list():
         print('\nTesting delete:')
         for item in ['B', 'C', 'A']:
             print('delete({!r})'.format(item))
-            ll.delete(item)
-            print('list: {}'.format(ll))
+            dll.delete(item)
+            print('list: {}'.format(dll))
 
-        print('head: {}'.format(ll.head))
-        print('tail: {}'.format(ll.tail))
-        print('length: {}'.format(ll.length()))
-
+        print('head: {}'.format(dll.head))
+        print('tail: {}'.format(dll.tail))
+        print('length: {}'.format(dll.length()))
 
 if __name__ == '__main__':
-    test_linked_list()
+    test_doubly_linked_list()

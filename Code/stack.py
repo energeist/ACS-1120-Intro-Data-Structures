@@ -1,8 +1,8 @@
 from linkedlist import Node
 
-class Queue:
+class Stack:
     def __init__(self, items=None):
-        """Initialize this queue and append the given items, if any."""
+        """Initialize this stack and append the given items, if any."""
         self.head = None  # First node
         self.tail = None  # Last node
         # Append given items
@@ -11,14 +11,14 @@ class Queue:
                 self.append(item)
 
     def __repr__(self):
-        """Return a string representation of this queue."""
-        queue_str = ""
+        """Return a string representation of this stack."""
+        stack_str = ""
         for item in self.items():
-            queue_str += f'({item}) -> '
-        return queue_str
+            stack_str += f'({item}) -> '
+        return stack_str
 
     def items(self):
-        """Return a list (dynamic array) of all items in this queue."""
+        """Return a list (dynamic array) of all items in this stack."""
         items = []
         node = self.head
         while node:
@@ -27,11 +27,11 @@ class Queue:
         return items
 
     def is_empty(self):
-        """Return a boolean indicating whether this queue is empty."""
+        """Return a boolean indicating whether this stack is empty."""
         return self.head is None
 
     def length(self):
-        """Return the length of this queue by traversing its nodes."""
+        """Return the length of this stack by traversing its nodes."""
         count = 0
         if self.head:
             current_node = self.head
@@ -41,8 +41,8 @@ class Queue:
                 current_node = current_node.next
         return count
     
-    def enqueue(self):
-        """Enqueue a new item to the queue at the back (tail) end"""
+    def push(self):
+        """push a new item to the top of the stack"""
         node = Node(item)
         if self.is_empty():
             self.head = node 
@@ -51,14 +51,14 @@ class Queue:
             self.tail.next = node
             self.tail = node
 
-    def dequeue(self):
-        """Remove and return an item from the front (head) of the queue"""
-        node = self.head
+    def pop(self):
+        """Remove and return an item from the top of the stack"""
+        node = self.tail
         self.delete(node)
         return node
 
     def find(self, matcher):
-        """Return an item from this queue if it is present."""
+        """Return an item from this stack if it is present."""
         node = self.head
         while node:
             if matcher == node.data:
@@ -67,7 +67,7 @@ class Queue:
         return False           
 
     def delete(self, item):
-        """Delete the given item from this queue, or raise ValueError."""
+        """Delete the given item from this stack, or raise ValueError."""
         previous_node = None
         next_node = None
         if self.head:
