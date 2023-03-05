@@ -158,7 +158,7 @@ class DoublyLinkedList:
                 previous_node.next = None    
             else: # data is found between head and tail
                 if current_node.next:
-                    current_node.next.prev = current_node.prev # update the .prev on the enxt node to be the previous node
+                    current_node.next.prev = current_node.prev # update the .prev on the next node to be the previous node
                 current_node = None 
                 previous_node.next = next_node
         else:
